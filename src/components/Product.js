@@ -41,7 +41,7 @@ export default class Product extends Component {
           </ProductConsumer>
           {/* card footer */}
           <div className="card-footer d-flex justify-content-between">
-            <p className="align-self-center mb-0">{title}</p>
+            <p className="align-self-center mb-0 text-maroon">{title}</p>
             <h5 className="text-maroon font-italic mb-0">
               <span className="mr-1">$</span>
               {price}
@@ -87,7 +87,7 @@ const ProductWrapper = styled.div`
     overflow: hidden;
   }
   .card-img-top {
-    transition: all 1s linear;
+    transition: all 0.5s linear;
   }
   .img-container:hover .card-img-top {
     transform: scale(1.2);
@@ -102,7 +102,7 @@ const ProductWrapper = styled.div`
     font-size: 1.4rem;
     border-radius: 0 0 0 0.5rem;
     transform: translate(100%, -100%);
-    transition: all 1s linear;
+    transition: all 0.5s linear;
   }
   .img-container:hover .cart-btn {
     transform: translate(0, 0);
